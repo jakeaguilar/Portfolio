@@ -1,0 +1,36 @@
+.colors{
+    height: 100px;
+    width: 200px;
+    display: block;
+}
+
+#boxRed{
+    background-color: red;
+    float: left;
+}
+
+#boxBlue{
+    background-color: Blue;
+    float: left;
+}
+
+#boxGreen{
+    background-color: Green;
+    float: left;
+}
+
+#boxPurple{
+    background-color: Purple;
+    float: left;
+    clear: both;
+}
+
+#boxYellow{
+    background-color: Yellow;
+    float: left;
+}
+
+#boxBlack{
+    background-color: Black;
+    float: left;
+}

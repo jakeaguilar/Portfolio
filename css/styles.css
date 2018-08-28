@@ -22,7 +22,7 @@
 #boxPurple{
     background-color: Purple;
     float: left;
-    clear: both;
+    clear: left;
 }
 
 #boxYellow{

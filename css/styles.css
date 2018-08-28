@@ -1,8 +1,12 @@
+body{
+    margin: 0px;
+}
 .container{
     width: 600px;
     margin: 0 auto;
-    position: relative;
-    top: 200px;
+    /* position: relative;
+    top: 200px; */
+    overflow: hidden;
 }
 .box{
     height: 100px;
@@ -10,7 +14,6 @@
     display: block;
     float: left;
 }
-
 
 .one{
     background-color: red;

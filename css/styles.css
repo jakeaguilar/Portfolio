@@ -1,38 +1,45 @@
-.colors{
+.container{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 200px;
+}
+.box{
     height: 100px;
     width: 200px;
     display: block;
+    float: left;
 }
 
 
-#boxRed{
+.one{
     background-color: red;
-    float: left;
+    
 }
 
-#boxBlue{
+.two{
     background-color: Blue;
-    float: left;
+    
 }
 
-#boxGreen{
+.three{
     background-color: Green;
-    float: left;
+    
 }
 
-#boxPurple{
+.four{
     background-color: Purple;
-    float: left;
     clear: left;
+    
 }
 
-#boxYellow{
+.five{
     background-color: Yellow;
-    float: left;
+    
 }
 
-#boxBlack{
+.six{
     background-color: Black;
-    float: left;
+    
 }
 

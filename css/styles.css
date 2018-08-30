@@ -10,11 +10,11 @@ body{
     display: block;
 }
 
-/* .nav-bar{
+.nav-bar{
     width: inherit;
     height: inherit;
     background-color: inherit;
-} */
+}
 
 .logo{
     width: 50px;
@@ -32,7 +32,7 @@ body{
 .list-item{
     float:left;
     list-style-type: none;
-    margin-right: 10px;
+    padding-right: 10px;
     /* background-color: #F26651; */
     /* display: inline; */
 }

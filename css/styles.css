@@ -10,16 +10,10 @@
 
 
 body {
-    font-family: 'PT Sans Caption',"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 3vh;
     margin: 0 auto;
     padding: 0 auto;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .hero {
@@ -37,6 +31,11 @@ body {
     background-size: cover;
 }
 
+.logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .logo {
     height: 50px;
@@ -49,29 +48,39 @@ body {
     border-radius: 50%;
 }
     
-/* .menu-icon {
+.menu-icon {
   font-family: Geneva, sans-serif;
   font-size: 6vh;
-} */
+}
     
 
-
 .hero-title {
-    max-width: 16em;
+    max-width: 7em;
     margin: 0 auto;
     font-size: 12vh;
     font-weight: bold;
     line-height: .9;
-    justify-content: center;
     text-align: center;
 }
 
 .sub-header-title{
-    max-width: 13em;
+    max-width: 10em;
     margin: 0 auto;
     padding-right: 3%;
     font-size: 5vh;
     font-weight: bold;
-    justify-content: center;
     text-align: center;
+}
+
+.sub-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down{
+    width: 60px;
+    height: 20%;
+    border-radius: 50%;
+    opacity: 50%;
 }

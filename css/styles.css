@@ -31,7 +31,7 @@ body {
     background-size: cover;
 }
 
-.logo-menu {
+.logo-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,11 +47,41 @@ body {
 .logo-img{
     border-radius: 50%;
 }
+
+.nav-bar{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-list{
+    margin: 0;
+    display: flex;
+    /* align-items: stretch;  */
+    justify-content: space-between;
     
-.menu-icon {
+}
+
+.list-item{
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.list-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-item a:hover{
+    color:#86C232
+}
+    
+/* .menu-icon {
   font-family: Geneva, sans-serif;
   font-size: 6vh;
-}
+} */
     
 
 .hero-title {

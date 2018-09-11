@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="css/fontawesome/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- HERO -->
     <div>
         <section class="hero">
             <header class="logo-nav">
@@ -20,31 +21,30 @@
                 <nav class="nav-bar">
                     <ul class="nav-list">
                         <li class="list-item"><a href="index.html">Home</a></li>
-                        <li class="list-item"><a href="about.html">About</a></li>
+                        <li class="list-item"><a href="#about">About</a></li>
                         <li class="list-item"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
             <div class="hero-header">
-                <h1 class="hero-title">Jake Aguilar: 
-                    <span class="sub-header-title">Junior Front End Developer</span>
+                <h1 class="hero-title">Jake <span class="green-text-color">Aguilar:</span>  
+                    <span class="sub-header-title">Junior <span class="green-text-color">Front</span> End Developer</span>
                 </h1>
             </div>
-            <div class="sub-header">
+            <div class="arrow">
                 <img src="/images/arrow_down.png" alt="arrow_down" class="arrow-down">
             </div>
         </section>
     </div>
-    <section class="passion-container">
-        <div class="passion-about-header">
-            <h1 class="about-h1">About Jacob</h1>
+    <!-- ABOUT -->
+    <section class="about-container" id="#about">
+        <div class="about-header">
+            <h1 class="about-h1">About Me</h1>
         </div>
-        <div class="passion-content-container">
-            <div class="passion-img">
-            </div>
-            <div class="passion-text">
-                <h3 class="passion-text-header">
-                    Passion for Tech
+        <div class="about-content-container">
+            <div class="about-content passion-text-col-1">
+                <h3 class="green-text-color">
+                    Passion for Development
                 </h3>
                 <p>
                     My passion for coding did not arise until early in my adult life. When I was
@@ -54,14 +54,32 @@
                     So i decided to dive in to my second passion at the time, technology and more specifically, coding.
                 </p>
             </div>
+            <div class="about-content passion-text-col-2">
+                <h3 class="green-text-color">
+                    Interests
+                </h3>
+                <p>
+                    When I am not learning to code, I enjoy a plethora of hobbies, such as Jiu-Jitsu, teaching others how to build computers,
+                    cooking, being a self-proclaimed whiskey connoisseur, spending time with family, and gaming.
+                </p>
+            </div>
         </div>
     </section>
-   <div class="footer">
-       <footer>
-           <p class="copyright">&copy; Jake Aguilar. All Rights Reserved.</p>
-       </footer>
-   </div>
+    <!-- Parallax Class Image -->
+    <div class="class-image">
+    </div>
+    <!-- SKILLS & EDUCATION -->
+    <!-- <section class="skills-container">
+    </section> -->
+    <footer class="footer">
+        <div class="fontawesome-icons">
+            <i class="fab fa-github-square fa-lg"></i>
+            <i class="fab fa-linkedin fa-lg"></i>        
+        </div>
+        <p class="copyright">&copy; Jake Aguilar. All Rights Reserved.</p>
+    </footer>
 
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@ body {
     padding: 1em;
     box-sizing: border-box;
     color: white;
-    background:linear-gradient(rgba(107, 110, 112, .5),rgba(107, 110, 112, .5)), url(/images/hero.jpg);
+    background:linear-gradient(rgba(107, 110, 112, .5),rgba(107, 110, 112, .5)), url(../images/hero.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ align-self: center
     padding: 1em;
     box-sizing: border-box;
     color: white;
-    background:linear-gradient(rgba(134, 194, 50, .1),rgba(134, 194, 50, .1)), url(/images/geekwise-bg.jpg);
+    background:linear-gradient(rgba(134, 194, 50, .1),rgba(134, 194, 50, .1)), url(../images/geekwise-bg.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;

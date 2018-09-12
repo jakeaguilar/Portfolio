@@ -1,44 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="header">
-        <img class="logo" src="https://i.pinimg.com/originals/0f/8b/28/0f8b2870896edcde8f6149fe2733faaf.jpg" alt="JA Logo">
-        <!-- NAV BAR -->
-        <nav class="nav-bar">
-            <ul class="nav-list">
-                <li class="list-item"><a href="index.html">Home</a></li>
-                <li class="list-item"><a href="about.html">About</a></li>
-                <li class="list-item"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <main>
+    <!-- HERO -->
+    <div>
         <section class="hero">
-            <div class="banner-img">
-                    <h1 class="banner-text">Front End Developer</h1>
+            <header class="logo-nav">
+                <a class="logo" href="#">
+                    <img class="logo-img" src="/images/logo.jpg" alt="logo">
+                </a>
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="index.html">Home</a></li>
+                        <li class="list-item"><a href="#about">About</a></li>
+                        <li class="list-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="hero-header">
+                <h1 class="hero-title">Jake <span class="green-text-color">Aguilar:</span>  
+                    <span class="sub-header-title">Junior <span class="green-text-color">Front</span> End Developer</span>
+                </h1>
             </div>
-            <h1 class="banner-text">
-                Front End Developer
-            </h1>
+            <div class="arrow">
+                <img src="/images/arrow_down.png" alt="arrow_down" class="arrow-down">
+            </div>
         </section>
-        <section>
-            
-        </section>
-    </main>
-   <div class="footer">
-       <footer>
-           <p class="copyright">&copy; Jake Aguilar. All Rights Reserved.</p>
-       </footer>
-   </div>
+    </div>
+    <!-- ABOUT -->
+    <section class="about-container" id="#about">
+        <div class="about-header">
+            <h1 class="about-h1">About Me</h1>
+        </div>
+        <div class="about-content-container">
+            <div class="about-content passion-text-col-1">
+                <h3 class="green-text-color">
+                    Passion for Development
+                </h3>
+                <p>
+                    My passion for coding did not arise until early in my adult life. When I was
+                    a kid, I thought I would have a career as a something to do with animals, as i thought animals
+                    were fascinating. I already knew I did not want to become a vetrinarian,
+                    so that limited my options and made me realize I really did not know what I wanted to do with animals, only that I liked them.
+                    So i decided to dive in to my second passion at the time, technology and more specifically, coding.
+                </p>
+            </div>
+            <div class="about-content passion-text-col-2">
+                <h3 class="green-text-color">
+                    Interests
+                </h3>
+                <p>
+                    When I am not learning to code, I enjoy a plethora of hobbies, such as Jiu-Jitsu, teaching others how to build computers,
+                    cooking, being a self-proclaimed whiskey connoisseur, spending time with family, and gaming.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Parallax Class Image -->
+    <div class="class-image">
+    </div>
+    <!-- SKILLS & EDUCATION -->
+    <!-- <section class="skills-container">
+    </section> -->
+    <footer class="footer">
+        <div class="fontawesome-icons">
+            <i class="fab fa-github-square fa-lg"></i>
+            <i class="fab fa-linkedin fa-lg"></i>        
+        </div>
+        <p class="copyright">&copy; Jake Aguilar. All Rights Reserved.</p>
+    </footer>
 
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

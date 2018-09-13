@@ -19,6 +19,9 @@ body {
 .green-text-color{
     color: #86C232;
 }
+
+/* HERO */
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -28,7 +31,7 @@ body {
     padding: 1em;
     box-sizing: border-box;
     color: white;
-    background:linear-gradient(rgba(107, 110, 112, .5),rgba(107, 110, 112, .5)), url(/images/hero.jpg);
+    background:linear-gradient(rgba(107, 110, 112, .5),rgba(107, 110, 112, .5)), url(../images/hero.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -124,6 +127,8 @@ body {
     opacity: 50%;
 }
 
+/* ABOUT */
+
 .about-container{
     display: flex;
     flex-direction: column;
@@ -137,44 +142,119 @@ body {
 align-self: center
 }
 
-.about-text-header{
-    color: #86C232;
+.about-header{
+    align-self: center
 }
 
 .about-h1{
-    color: #86C232;
+    
 }
 
 .about-content-container{
     display: flex;
     flex-direction: row;
-    
-
 }
 
 .about-content{
     padding: 20px;
 }
-.passion-text-col-1{
+.about-text-col-1{
 
 }
 
-.passion-text-col-2{
+.about-text-col-2{
     
 }
 
-.geekwise-image{
+/* SKILLS/EDUCATION & GEEKWISE CLASS IMAGE */
+
+/* .geekwise-image{
     height: 100vh;
     width: 100%;
     padding: 1em;
     box-sizing: border-box;
     color: white;
-    background:linear-gradient(rgba(134, 194, 50, .1),rgba(134, 194, 50, .1)), url(/images/geekwise-bg.jpg);
+    background:linear-gradient(rgba(134, 194, 50, .1),rgba(134, 194, 50, .1)), url(../images/geekwise-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    rgba(97, 137, 47, 1)
+} */
+
+.skills-container{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #ffffff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150vh;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    background:linear-gradient(rgba(107, 110, 112, .99),rgba(107, 110, 112, .6)), url(../images/geekwise-bg.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.skills-header{
+    align-self: center
+}
+
+.skills-h1{
+    color: #86C232
+}
+
+.skills-content-container{
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+}
+
+.skills-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; */
+    align-items: center;
+    padding: 10px;
+    background-color: #474B4F;
+}
+
+.col-header{
+    margin-bottom: 0px;
+}
+
+
+.skills-text-col-1, .skills-text-col-2, .skills-text-col-3 {
+    text-align: center;
+    border-right: 1px solid #222629;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.edu-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-text-col-2{
+    border-right: 1px solid #222629;
+    
+}
+
+.skills-text-col-3{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    
+}
+
+/* FOOTER */
 
 .footer{
     width: 100%;

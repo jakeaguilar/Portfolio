@@ -52,7 +52,7 @@ body {
 
 /* Sticky Nav Bar */
 .fixed-nav {
-    background-color: #222629;
+    background-color: #252627;
 }
 
 .logo {
@@ -162,7 +162,7 @@ align-self: center
 }
 
 .about-h1{
-    
+    padding-top: 17px;
 }
 
 .about-content-container{

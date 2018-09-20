@@ -31,7 +31,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: white;
-    background:linear-gradient(rgba(107, 110, 112, .5),rgba(107, 110, 112, .5)), url(../images/hero.jpg);
+    background:linear-gradient(rgba(107, 110, 112, .7),rgba(107, 110, 112, .7)), url(../images/hero.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;

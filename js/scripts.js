@@ -14,11 +14,11 @@ window.addEventListener('scroll', stickyNavigationpx);
 // trigger sticky nav by adding css class to stylesheet when scrollY is greater than navTop
 function stickyNavigation(){
     if(window.scrollY > navTop){
-        document.body.style.paddingTop = nav.offsetHeight + 'px';
-        document.body.classList.add('fixed-nav');
+        // document.body.style.paddingTop = nav.offsetHeight + 'px';
+        document.getElementById("navigation").classList.add('fixed-nav');
     } else{
         document.body.style.paddingTop = 0;
-        document.body.classList.remove('fixed-nav');
+        document.getElementById("navigation").classList.remove('fixed-nav');
     }
 }
 

@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     height: 100vh;
     width: 100%;
-    padding: 1em;
+    padding: 0;
     box-sizing: border-box;
     color: white;
     background:linear-gradient(rgba(107, 110, 112, .5),rgba(107, 110, 112, .5)), url(../images/hero.jpg);
@@ -39,12 +39,20 @@ body {
 }
 
 .logo-nav {
-    position: sticky;
-    top:-1px;
+    /* position: sticky; */
+    /* top:-1px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: black; */
+    width: 100%
+}
+
+/* Sticky Nav Bar */
+.fixed-nav header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #222629;
 }
 
 .logo {
@@ -168,20 +176,6 @@ align-self: center
 
 /* SKILLS/EDUCATION & GEEKWISE CLASS IMAGE */
 
-/* .geekwise-image{
-    height: 100vh;
-    width: 100%;
-    padding: 1em;
-    box-sizing: border-box;
-    color: white;
-    background:linear-gradient(rgba(134, 194, 50, .1),rgba(134, 194, 50, .1)), url(../images/geekwise-bg.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    rgba(97, 137, 47, 1)
-} */
-
 .skills-container{
     /* display: flex;
     flex-direction: column;
@@ -192,7 +186,7 @@ align-self: center
     justify-content: space-evenly;
     height: 150vh;
     width: 100%;
-    padding: 1em;
+    padding: 0;
     box-sizing: border-box;
     color: white;
     background:linear-gradient(rgba(107, 110, 112, .99),rgba(107, 110, 112, .6)), url(../images/geekwise-bg.jpg);
@@ -213,16 +207,22 @@ align-self: center
 .skills-content-container{
     display: flex;
     flex-direction: row;
-    border-radius: 12px;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: content; */
+    padding: 40px;
+    padding-top: 0px;
 }
 
 .skills-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     /* align-content: center; */
-    align-items: center;
-    padding: 10px;
+    /* align-items: center; */
+    margin: 0 auto;
+    padding: 20px;
     background-color: #474B4F;
 }
 
@@ -230,12 +230,19 @@ align-self: center
     margin-bottom: 0px;
 }
 
-
-.skills-text-col-1, .skills-text-col-2, .skills-text-col-3 {
-    text-align: center;
+.skills-text-col-1 {
     border-right: 1px solid #222629;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
+}
+
+.skills-text-col-2{
+    border-right: 1px solid #222629;
+}
+
+.skills-text-col-3{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .edu-list{
@@ -243,17 +250,98 @@ align-self: center
     padding: 0;
 }
 
-.skills-text-col-2{
-    border-right: 1px solid #222629;
+/* CONTACT */
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: #474B4F;
+}
+
+.map-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     
 }
 
-.skills-text-col-3{
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    
+.map-container iframe{
+
 }
 
+.contact-map{
+    width: 95%;
+    height: 95%;
+    border: 0px;
+}
+
+
+
+.form-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #474B4F;
+}
+
+.contact-header{
+    margin: 0 auto;
+    border-bottom: 50px #86C232;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    border-radius: 2%;
+    font-family: inherit;
+    text-align: center;
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background-color: #394141;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+form input{
+    font-family: inherit;
+    text-align: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+form textarea{
+    font-family: inherit;
+    text-align: center;
+    margin: 5px;
+}
+
+form 
+
+.contact-submit{
+    width: fit-content;
+    font-family: inherit;
+    background-color: #86C232;
+    color: #222629;
+    border-radius: 2px;
+}
+
+.contact-submit:hover{
+    background: #61892F;
+}
 /* FOOTER */
 
 .footer{
@@ -279,5 +367,12 @@ align-self: center
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.fontawesome-icons a{
     color: #86C232;
+}
+
+.fontawesome-icons a:hover{
+    color: #61892F;
 }

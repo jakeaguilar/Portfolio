@@ -52,7 +52,8 @@ body {
 
 /* Sticky Nav Bar */
 .fixed-nav {
-    background-color: #252627;
+    background-color: #222629;
+    transition: background-color 1s ease-in-out;
 }
 
 .logo {
@@ -148,7 +149,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color:#252627;
+    background-color:#222629;
     color: #ffffff;
 
 }

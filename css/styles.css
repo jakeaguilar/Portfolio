@@ -20,6 +20,46 @@ body {
     color: #86C232;
 }
 
+/* NAVBAR */
+.navbar-nav li a:hover{
+    background-color: transparent;
+}
+
+.navbar{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: (rgba(17, 17, 17, .5))
+} 
+
+.navbar .navbar-nav>li>a{
+    color: #fcfcfc;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:focus{
+    color: #61892F;
+    background-color: rgba(17, 17 , 17, .2);
+}
+
+nav.navbar{
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+
+
+
+
 /* HERO */
 
 .hero {

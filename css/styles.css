@@ -201,8 +201,8 @@ border-left: 1px solid #222629;
 }
 
 .projects-spacing{
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     padding-bottom: 1em;
 }
 
@@ -210,9 +210,14 @@ border-left: 1px solid #222629;
     width: 350px;
     height: 300px;
     border-radius: 6px;
-    margin-bottom: .5em;;
+    margin-bottom: .5em;
+    /* padding: 50px; */
 
-    /* margin: .5em; */
+    /* margin: 1px; */
+}
+
+.padding{
+    padding: 10px;
 }
 
 .projects-img-header{
@@ -228,14 +233,19 @@ border-left: 1px solid #222629;
 
 .projects-img1:hover {
     background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .80)), url(../images/restGif.gif);
+    background-size: contain;
 }
 
 .projects-img2{
-    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .8)), url();
+    background-image: linear-gradient(rgba(107, 110, 112, .8),rgba(107, 110, 112, .8)), url(../images/githelp.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-img2:hover {
-    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .80)), url();
+    background-image: linear-gradient(rgba(107, 110, 112, .8),rgba(107, 110, 112, .80)), url(../images/gitGif.gif);
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-img3{

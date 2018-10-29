@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="images/ja-logo.png">
     <link rel="stylesheet" href="css/all.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>JA: Dev</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- CAROUSEL & NAV -->
-    <nav class="navbar navbar-expand-lg" id="navigation">
+    <nav class="navbar navbar-dark navbar-expand-lg" id="navigation">
         <a href="#" class="navbar-brand">
             <img src="images/ja-logo.png" alt="" class="logo">
         </a>
@@ -23,9 +24,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skillset" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
@@ -67,7 +67,7 @@
         </div>
     </div>
     <!-- ABOUT & SKILLS -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-container">
             <div class="row">
                 <div class="about-header d-flex justify-content-center col-12">
@@ -127,14 +127,14 @@
         </div>
     </section>
     <!-- PROJECTS -->
-    <section class="projects-container">
+    <section class="projects-container" id="projects">
         <div class="projects-header d-flex justify-content-center">
             <h1 class="projects-h1 green-text-color">Projects</h1>
         </div>
-        <div class="row projects-spacing text-center d-flex justify-content-between ">
+        <div class="row projects-spacing text-center d-flex justify-content-center ">
             <div class="col-lg-4 col-md-6 col-xs-12 projects-img1 projects-item d-flex flex-column justify-content-between">
                 <h4 class="projects-img-header green-text-color">Restaurante</h4>
-                <p>A multicultral dining expierence right here in the Central Valley.</p>
+                <p class="projects-p">A multicultral dining expierence right here in the Central Valley.</p>
                 <div class="d-flex flex-row justify-content-between projects-icons">
                     <a href="https://jakeaguilar.github.io/mobilefriendly-restaurante/" target="_blank"><i class="fas fa-globe-americas fa-lg"></i></a>
                     <a href="https://github.com/jakeaguilar/mobilefriendly-restaurante" target="_blank"><i class="fab fa-github fa-lg"></i></a>
@@ -142,7 +142,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-xs-12 projects-img2 projects-item d-flex flex-column justify-content-between">
                 <h4 class="projects-img-header green-text-color">GitHelp</h4>
-                <p>A straight forward resource for those just starting with Git.</p>
+                <p class="projects-p">A straight forward resource for those just starting with Git.</p>
                 <div class="d-flex flex-row justify-content-between projects-icons">
                     <a href="https://jakeaguilar.github.io/GitHelp/" target="_blank" ><i class="fas fa-globe-americas fa-lg"></i></a>
                     <a href="https://github.com/jakeaguilar/GitHelp" target="_blank" ><i class="fab fa-github fa-lg"></i></a>
@@ -150,17 +150,17 @@
             </div>
             <div class="col-lg-4 col-md-6 col-xs-12 projects-img3 projects-item d-flex flex-column justify-content-between">
                 <h4 class="projects-img-header green-text-color">Pet Store</h4>
-                <p>Small pet store dedicated to the best care for your furry friends.</p>
+                <p class="projects-p">Small pet store dedicated to the best care for your furry friends.</p>
                 <div class="d-flex flex-row justify-content-between projects-icons">
-                    <a href="" target="_blank" ><i class="fas fa-globe-americas fa-lg"></i></a>
-                    <a href="" target="_blank" ><i class="fab fa-github fa-lg"></i></a>
+                    <a href="https://jakeaguilar.github.io/mobilefriendly-petstore/" target="_blank" ><i class="fas fa-globe-americas fa-lg"></i></a>
+                    <a href="https://github.com/jakeaguilar/mobilefriendly-petstore" target="_blank" ><i class="fab fa-github fa-lg"></i></a>
                 </div>
             </div>
         </div>
         
     </section>
     <!-- CONTACT -->
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <div class="row">
             <div class="map-container col-xs-12 col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.609142008521!2d-119.78801758483739!3d36.731947279962746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise+South+Stadium!5e0!3m2!1sen!2sus!4v1537387637790"
@@ -187,8 +187,7 @@
         <p class="copyright">&copy; Jake Aguilar. All Rights Reserved.</p>
     </footer>
     <script src="js/all.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

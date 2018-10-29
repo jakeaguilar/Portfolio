@@ -18,5 +18,3 @@ function stickyNavigation(){
 
 window.addEventListener('scroll', stickyNavigation);
 
-// const abtBrdrRemove = document.querySelector('aboutBorders')
-// const aboutMe = 

@@ -11,6 +11,7 @@
 
 /* OOCSS */
 body {
+    position: relative;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3vh;
     margin: 0 auto;
@@ -47,6 +48,10 @@ nav.navbar{
     z-index: 20;
 }
 
+nav.navbar-dark{
+   
+}
+
 .navbar-nav li a:hover{
     background-color: transparent;
 }
@@ -64,13 +69,13 @@ nav.navbar{
 } 
 
 .navbar .navbar-nav>li>a{
-    color: #fcfcfc;
+    color: #fcfcfc !important ;
     text-shadow: 1px 1px 2px #0a0a0a;
 }
-
+.navbar .navbar-nav li a:active,
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li a:focus{
-    color: #61892F;
+    color: #61892F !important;
     background-color: rgba(17, 17 , 17, .2);
 }
 
@@ -211,9 +216,6 @@ border-left: 1px solid #222629;
     height: 300px;
     border-radius: 6px;
     margin-bottom: .5em;
-    /* padding: 50px; */
-
-    /* margin: 1px; */
 }
 
 .padding{
@@ -224,6 +226,10 @@ border-left: 1px solid #222629;
     margin-top: .5em;
     font-size: 30px;
     font-weight: bold;
+}
+
+.projects-p{
+    color: #fff;
 }
 
 .projects-img1{
@@ -237,23 +243,27 @@ border-left: 1px solid #222629;
 }
 
 .projects-img2{
-    background-image: linear-gradient(rgba(107, 110, 112, .8),rgba(107, 110, 112, .8)), url(../images/githelp.png);
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .85)), url(../images/githelp.png);
     background-size: cover;
     background-position: center;
 }
 
 .projects-img2:hover {
-    background-image: linear-gradient(rgba(107, 110, 112, .8),rgba(107, 110, 112, .80)), url(../images/gitGif.gif);
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .85)), url(../images/gitGif.gif);
     background-size: cover;
     background-position: center;
 }
 
 .projects-img3{
-    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .8)), url();
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .8)), url(../images/pet1.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-img3:hover {
-    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .80)), url();
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .80)), url(../images/petGif.gif);
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-icons{
@@ -301,6 +311,16 @@ border-left: 1px solid #222629;
 }
 
 .form-control{
+    background: transparent;
+    border: none;
+    outline: none;
+    background-color: #394141;
+    /* color: #ffffff; */
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.form-control:click{
     background: transparent;
     border: none;
     outline: none;

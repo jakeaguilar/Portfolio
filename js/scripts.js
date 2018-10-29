@@ -1,4 +1,4 @@
-
+// STICKY NAVBAR
 // select the navbar and make it constant variable and set how far down the navbar starts
 const nav = document.querySelector('#navigation');
 const navTop = nav.offsetTop;
@@ -17,3 +17,6 @@ function stickyNavigation(){
 }
 
 window.addEventListener('scroll', stickyNavigation);
+
+// const abtBrdrRemove = document.querySelector('aboutBorders')
+// const aboutMe = 

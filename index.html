@@ -1,140 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="images/ja-logo.png">
+    <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css">
-
-    <title>Portfolio</title>
+    <title>JA: Dev</title>
 </head>
-<body>
-    <!-- HERO -->
-    <div>
-        <section class="hero">
-            <header class="logo-nav"  id="navigation">
-                <a class="logo" href="index.html">
-                    <img class="logo-img" src="../images/ja-logo.png" alt="logo">
-                </a>
-                <nav class="nav-bar">
-                    <ul class="nav-list">
-                        <li class="list-item"><a href="index.html">Home</a></li>
-                        <li class="list-item"><a href="#about">About</a></li>
-                        <li class="list-item"><a href="#skillset">Skills</a></li>
-                        <li class="list-item"><a href="#contact">Contact</a></li>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- CAROUSEL & NAV -->
+    <nav class="navbar navbar-dark navbar-expand-lg" id="navigation">
+        <a href="#" class="navbar-brand">
+            <img src="images/ja-logo.png" alt="" class="logo">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggle"
+            aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggle">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- CAROUSEL -->
+    <div class="container-fluid wrap carousel-section">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <!-- <li data-target="#heroCarousel" data-slide-to="2"></li> -->
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item main-img1 active">
+                    <div class="carousel-caption">
+                        <h1 class="carousel-title">Jake <span class="green-text-color">Aguilar:</span>
+                            <span class="sub-carousel-title">Aspiring <span class="green-text-color">Cohort</span> Member</span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="carousel-item main-img2">
+                    <div class="carousel-caption">
+                        <h1 class="green-text-color freelancer">Freelance Developer</h1>
+                        <h5 class="freelancer-sub-header">Based out of the Central Valley, and passionate about being
+                            involved in the tech community right here in Fresno!</h5>
+                        <a href="" class="btn btn-lg btn-primary" role="button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- ABOUT & SKILLS -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="about-header d-flex justify-content-center col-12">
+                    <h1 class="green-text-color">About Me</h1>
+                </div>
+            </div>
+            <div class="about-content text-center row">
+                <div class="col-md-4 about-col-left">
+                    <i class="fas fa-edit about-icons"></i>
+                    <h3 class="col-header green-text-color">Student</h3>
+                    <p>I am constantly pushing myself to learn code, and love helping others when i am able to.</p>
+                    <p class="col-header green-text-color">Where I've Studied:</p>
+                    <p>B.S. in Software Engineering & Geekwise Academy</p>
+                    <p class="col-header green-text-color">Concepts Learned, and need to review...</p>
+                    <ul class="about-li">
+                        <li>DRY Principle</li>
+                        <li>Version Control Systems</li>
+                        <li>Normalization</li>
+                        <li>SDLC</li>
+                        <li>Design Patterns</li>
                     </ul>
-                </nav>
-            </header>
-            <div class="hero-center">
-                <div class="hero-header">
-                    <h1 class="hero-title">Jake <span class="green-text-color">Aguilar:</span>  
-                        <span class="sub-header-title">Junior <span class="green-text-color">Front</span> End Developer</span>
-                    </h1>
                 </div>
-                    <!-- <div class="arrow">
-                        <img src="../images/arrow_down.png" alt="arrow_down" class="arrow-down">
-                    </div> -->
-            </div>
-        </section>
-    </div>
-    <!-- ABOUT -->
-    <a name="about">
-        <section class="about-container">
-            <div class="about-header">
-                <h1 class="about-h1 green-text-color">About Me</h1>
-            </div>
-            <div class="about-content-container">
-                <div class="about-content about-text-col-1">
-                    <h3 class="green-text-color">
-                        Passion for Development
-                    </h3>
-                    <p>
-                        My passion for coding did not arise until early in my adult life. When I was
-                        a kid, I thought I would have a career as a something to do with animals, as i thought animals
-                        were fascinating. I already knew I did not want to become a vetrinarian,
-                        so that limited my options and made me realize I really did not know what I wanted to do with animals, only that I liked them.
-                        So i decided to dive in to my second passion at the time, technology and more specifically, coding.
-                    </p>
+                <div class="col-md-4">
+                    <i class="fas fa-code about-icons"></i>
+                    <h3 class="col-header green-text-color">Developer</h3>
+                    <p>I love being able to bring an idea out of my head, and bring it to life on the screen.</p>
+                    <p class="col-header green-text-color">Technologies being learnt:</p>
+                    <p>HTML, CSS, Bootstrap 3 & 4, Javascript ES6, Git</p>
+                    <p class="col-header green-text-color">Dev Tools:</p>
+                    <ul class="about-li">
+                        <li>VS Code</li>
+                        <li>Chrome DevTools</li>
+                        <li>Slack</li>
+                        <li>Stack Overflow</li>
+                        <li>and...</li>
+                        <li>coffee...</li>
+                        <li>gallons of coffee...</li>
+                    </ul>
                 </div>
-                <div class="about-content about-text-col-2">
-                    <h3 class="green-text-color">
-                        Interests
-                    </h3>
-                    <p>
-                        When I am not learning to code, I enjoy a plethora of hobbies, such as giking, teaching others how to build computers,
-                        cooking, being a self-proclaimed whiskey connoisseur, spending time with family, Jiu-Jitsu, and gaming.
-                    </p>
+                <div class="col-md-4 about-col-right">
+                    <i class="fas fa-fingerprint about-icons"></i>
+                    <h3 class=" col-header green-text-color">Human</h3>
+                    <p>While technical abilty is important, being communicative and socialble is just as important.</p>
+                    <p class="col-header green-text-color">Likes:</p>
+                    <p>Whiskey/Beer, Martial Arts, Building Computers, Gaming, and Hiking</p>
+                    <p class="col-header green-text-color">Soft Skills:</p>
+                    <ul class="about-li">
+                        <li>Work Ethic</li>
+                        <li>Listening Well</li>
+                        <li>Communication</li>
+                        <li>Problem Solving</li>
+                        <li>Time Management</li>
+                        <li>Leadership</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </a>
-    <!-- SKILLS/EDUCATION & Geekwise Class Image BG -->
-    <div class="geekwise-image">
-    </div>
-    <a name="skillset">
-        <section class="skills-container">
-            <div class="skills-header">
-                    <h1 class="skills-h1 green-text-color">Skillset & Education</h1>
+        </div>
+    </section>
+    <!-- PROJECTS -->
+    <section class="projects-container" id="projects">
+        <div class="projects-header d-flex justify-content-center">
+            <h1 class="projects-h1 green-text-color">Projects</h1>
+        </div>
+        <div class="row projects-spacing text-center d-flex justify-content-center ">
+            <div class="col-lg-4 col-md-6 col-xs-12 projects-img1 projects-item d-flex flex-column justify-content-between">
+                <h4 class="projects-img-header green-text-color">Restaurante</h4>
+                <p class="projects-p">A multicultral dining expierence right here in the Central Valley.</p>
+                <div class="d-flex flex-row justify-content-between projects-icons">
+                    <a href="https://jakeaguilar.github.io/mobilefriendly-restaurante/" target="_blank"><i class="fas fa-globe-americas fa-lg"></i></a>
+                    <a href="https://github.com/jakeaguilar/mobilefriendly-restaurante" target="_blank"><i class="fab fa-github fa-lg"></i></a>
                 </div>
-                <div class="skills-content-container">
-                    <div class="skills-content skills-text-col-1">
-                        <h3 class="col-header green-text-color">Student</h3>
-                        <p>I am constantly pushing myself to learn code, and love helping others when i am able to.</p>
-                        <p class="col-header green-text-color">Where I've Studied:</p>
-                        <p>B.S. in Software Engineering from University of Phoenix & aspiring cohort member at Bitwise Industries.</p>
-                        <p class="col-header green-text-color">Concepts Learned, and need to review...</p>
-                        <ul class="edu-list">
-                            <li>DRY Principle</li>
-                            <li>Version Control Systems</li>
-                            <li>Normalization</li>
-                            <li>SDLC</li>
-                            <li>Design Patterns</li>
-                            <li>Scope Restraint</li>
-                        </ul>
-                        
-                    </div>
-                    <div class="skills-content skills-text-col-2">
-                        <h3 class="col-header green-text-color">Developer</h3>
-                        <p>I love being able to bring an idea from out of my head, and bring it to life on the screen. Being able to work with creative and intelligent people is a plus.</p>
-                        <p class="col-header green-text-color">Technologies being learnt:</p>
-                        <p>HTML, CSS, Javascript, Sass, and soon package managers, like npm or yarn, and a CSS framework, such as Bootstrap or Materialize.</p>
-                        <p class="col-header green-text-color">Dev Tools:</p>
-                        <ul class="edu-list">
-                            <li>VS Code</li>
-                            <li>Github</li>
-                            <li>GIT</li>
-                            <li>Chrome DevTools</li>
-                            <li>Slack</li>
-                            <li>Stack Overflow</li>
-                        </ul>
-                    </div>
-                    <div class="skills-content skills-text-col-3">
-                        <h3 class=" col-header green-text-color">Human</h3>
-                        <p>While technical abilty is important, being able to function within a team, either as a member or leader is equally important.</p>
-                        <p class="col-header green-text-color">Grit:</p>
-                        <p>Combination of both passion and peserverance, spirit to overcome challenges rather than run from them.</p>
-                        <p class="col-header green-text-color">Soft Skills:</p>
-                        <ul class="edu-list">
-                            <li>Work Ethic</li>
-                            <li>Listening Well</li>
-                            <li>Communication</li>
-                            <li>Problem Solving</li>
-                            <li>Time Management</li>
-                            <li>Leadership</li>
-                        </ul>
-                    </div>
-                </div> 
-        </section>
-    </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 projects-img2 projects-item d-flex flex-column justify-content-between">
+                <h4 class="projects-img-header green-text-color">GitHelp</h4>
+                <p class="projects-p">A straight forward resource for those just starting with Git.</p>
+                <div class="d-flex flex-row justify-content-between projects-icons">
+                    <a href="https://jakeaguilar.github.io/GitHelp/" target="_blank" ><i class="fas fa-globe-americas fa-lg"></i></a>
+                    <a href="https://github.com/jakeaguilar/GitHelp" target="_blank" ><i class="fab fa-github fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-xs-12 projects-img3 projects-item d-flex flex-column justify-content-between">
+                <h4 class="projects-img-header green-text-color">Pet Store</h4>
+                <p class="projects-p">Small pet store dedicated to the best care for your furry friends.</p>
+                <div class="d-flex flex-row justify-content-between projects-icons">
+                    <a href="https://jakeaguilar.github.io/mobilefriendly-petstore/" target="_blank" ><i class="fas fa-globe-americas fa-lg"></i></a>
+                    <a href="https://github.com/jakeaguilar/mobilefriendly-petstore" target="_blank" ><i class="fab fa-github fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
     <!-- CONTACT -->
-    <a name="contact">
-        <section class="contact-container">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.609142008521!2d-119.78801758483739!3d36.731947279962746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise+South+Stadium!5e0!3m2!1sen!2sus!4v1537387637790" class="contact-map" allowfullscreen></iframe>
+    <section class="contact-container" id="contact">
+        <div class="row">
+            <div class="map-container col-xs-12 col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.609142008521!2d-119.78801758483739!3d36.731947279962746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise+South+Stadium!5e0!3m2!1sen!2sus!4v1537387637790"
+                    class="contact-map" allowfullscreen></iframe>
             </div>
-            <div class="form-container">
+            <div class="form-container col-xs-12 col-md-6 text-center">
                 <h3 class="contact-header green-text-color">Contact Me</h3>
                 <form action="https://formspree.io/jacob.aguilar@jakeaguilar.com" method="post" class="contact-form">
                     <input type="text" name="firstName" class="form-control" placeholder="First Name" required>
@@ -144,21 +176,20 @@
                     <input type="submit" name="submit" class="form-control contact-submit" value="Send Message">
                 </form>
             </div>
-        </section>
-    </a>
+        </div>
+    </section>
     <!-- FOOTER -->
-
-
     <footer class="footer">
         <div class="fontawesome-icons">
-            <!-- <a href="your link here"> <i class="fa fa-dribbble fa-4x"></i></a> -->
-            <a href="https://github.com/jakeaguilar" target="_blank"><i class="fab fa-github-square fa-lg"></i></a> 
-            <a href="https://www.linkedin.com/in/jacob-aguilar-00b687168/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>       
+            <a href="https://github.com/jakeaguilar" target="_blank"><i class="fab fa-github-square fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/jacob-aguilar-00b687168/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
         </div>
         <p class="copyright">&copy; Jake Aguilar. All Rights Reserved.</p>
     </footer>
-
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

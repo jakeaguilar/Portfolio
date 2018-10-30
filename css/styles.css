@@ -38,6 +38,9 @@ body {
     padding: 0;
 }
 
+.row{
+    margin: 0;
+}
 
 /* NAVBAR */
 nav.navbar{
@@ -46,11 +49,9 @@ nav.navbar{
     left: 0;
     right: 0;
     z-index: 20;
+    padding-right: 1.5em;
 }
 
-nav.navbar-dark{
-   
-}
 
 .navbar-nav li a:hover{
     background-color: transparent;
@@ -176,7 +177,7 @@ nav.navbar-dark{
 }
 
 .about-header{
-    margin: 1em;
+    
 }
 
 .about-content{

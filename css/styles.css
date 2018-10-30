@@ -187,13 +187,13 @@ nav.navbar-dark{
     background-color: #474B4F;
     border-radius: 6px;
 }
-.about-col-left{
+/* .about-col-left{
 border-right: 1px solid #222629;
 }
 
 .about-col-right{
 border-left: 1px solid #222629;
-}
+} */
 
 /* PROJECTS */
 
@@ -389,3 +389,13 @@ form textarea{
 .fontawesome-icons a:hover{
     color: #61892F;
 }
+
+@media (min-width: 768px) { 
+    .about-col-left{
+border-right: 1px solid #222629;
+}
+
+.about-col-right{
+border-left: 1px solid #222629;
+}
+ }

@@ -49,7 +49,6 @@ nav.navbar{
     left: 0;
     right: 0;
     z-index: 20;
-    padding-right: 1.5em;
 }
 
 
@@ -213,8 +212,8 @@ border-left: 1px solid #222629;
 }
 
 .projects-item{
-    width: 350px;
-    height: 300px;
+    /* width: 350px;*/
+    height: 300px; 
     border-radius: 6px;
     margin-bottom: .5em;
 }
@@ -392,6 +391,7 @@ form textarea{
 }
 
 @media (min-width: 768px) { 
+
     .about-col-left{
 border-right: 1px solid #222629;
 }

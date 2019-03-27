@@ -267,6 +267,31 @@ border-left: 1px solid #222629;
     background-position: center;
 }
 
+
+.projects-img4{
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .8)), url(../images/lsstuff.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-img4:hover{
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .8)), url(../images/lsstuffGif.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-img5{
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .8)), url(../images/resumista.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-img5:hover{
+    background-image: linear-gradient(rgba(107, 110, 112, .85),rgba(107, 110, 112, .80)), url(../images/resumistaGif.gif);
+    background-size: cover;
+    background-position: center;
+}
+
 .projects-icons{
     margin-bottom: .5em;
 }

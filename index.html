@@ -25,16 +25,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <a class="nav-item nav-link scroll" href="#home">Home</a>
+                        <a class="nav-item nav-link scroll" href="#about">About</a>
+                        <a class="nav-item nav-link scroll" href="#projects">Projects</a>
+                        <a class="nav-item nav-link scroll" href="#contact">Contact</a>
                     </ul>
                 </div>
             </nav>
         </div>
     <!-- CAROUSEL -->
-    <div class="container-fluid wrap carousel-section">
+    <div class="container-fluid wrap carousel-section" id="home">
         <div id="heroCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
@@ -130,7 +130,7 @@
         </div>
     </section>
     <!-- PROJECTS -->
-    <section class="projects-container container-fluid" id="projects">
+    <section class="projects-container section-header container-fluid " id="projects">
         <div class="projects-header d-flex justify-content-center">
             <h1 class="projects-h1 green-text-color">Projects</h1>
         </div>
@@ -197,7 +197,7 @@
 
     </section>
     <!-- CONTACT -->
-    <section class="contact-container" id="contact">
+    <section class="contact-container section-header" id="contact">
         <div class="row contact-row">
             <div class="map-container col-xs-12 col-md-6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.609142008521!2d-119.78801758483739!3d36.731947279962746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise+South+Stadium!5e0!3m2!1sen!2sus!4v1537387637790"

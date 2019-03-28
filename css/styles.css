@@ -12,7 +12,9 @@
 /* OOCSS */
 html, body {
     width:100%; 
-    overflow-x:hidden;}
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
 
 body {
     position: relative;
@@ -30,6 +32,10 @@ body {
     color: #86C232;
     margin-bottom: .5em;
     font-size: 40px;
+}
+
+.section-header{
+    padding-top: 68px;
 }
 
 .col-header{
@@ -169,11 +175,13 @@ nav.navbar{
 
 }
 
-/* ABOUT BOOTSTRAP */
+/* ABOUT */
+
 .about-container{
     /* height: 100vh; */
     width: 100%;
     padding: .5em;
+    padding-top: 68px;
     padding-bottom: 1.5em;
     background-color:#222629;
     color: #ffffff;

@@ -222,7 +222,7 @@ border-left: 1px solid #222629;
 
 .projects-item{
     /* width: 350px;*/
-    height: 300px; 
+    height: 15em;
     border-radius: 6px;
     margin-bottom: .5em;
 }
@@ -239,6 +239,7 @@ border-left: 1px solid #222629;
 
 .projects-p{
     color: #fff;
+    font-size: 1em;
 }
 
 .projects-img1{
@@ -433,4 +434,12 @@ border-right: 1px solid #222629;
 .about-col-right{
 border-left: 1px solid #222629;
 }
- }
+
+}
+
+@media  (max-width: 930px)
+    and (min-width: 768px){
+    .projects-p{
+        font-size: .80em;
+    }
+}
